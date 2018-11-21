@@ -1,7 +1,9 @@
 def bubbleSort(sortList):
     '''冒泡排序的python实现代码'''
     for i in range(len(sortList)-1):
+        #只需比较len(sortList)-1次
         for j in range(len(sortList)-i-1):
+            #由于使用当前值与后一个值进行比较吗，所以索引需要减一
             if sortList[j] > sortList[j+1]:
                 temp = sortList[j]
                 sortList[j] = sortList[j+1]
