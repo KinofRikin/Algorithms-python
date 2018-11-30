@@ -1,5 +1,6 @@
 def quickSort(list):
     '''快速排序python实现'''
+    '''快速排序是最快的排序算法之一，也是D&C典范'''
     if len(list) < 2:
         return list
     else:
